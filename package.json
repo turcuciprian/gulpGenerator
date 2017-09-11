@@ -18,10 +18,12 @@
     "node-sass": "^4.5.3",
     "browser-sync": "^2.18.13",
     "webpack-dev-server": "^2.4.2",
-    "browser-sync-webpack-plugin": "^1.2.0"
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "bootstrap": "^3.3.7",
+    "url-loader": "^0.5.9"
   },
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors",
+    "dev": "webpack-dev-server --progress --colors --watch",
     "start": "webpack && npm run dev",
     "watch": "webpack --watch"
   },
