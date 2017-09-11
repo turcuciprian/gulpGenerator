@@ -20,7 +20,8 @@
     "webpack-dev-server": "^2.4.2",
     "browser-sync-webpack-plugin": "^1.2.0",
     "bootstrap": "^3.3.7",
-    "url-loader": "^0.5.9"
+    "url-loader": "^0.5.9",
+    "raw-loader": "^0.5.1"
   },
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --watch",
