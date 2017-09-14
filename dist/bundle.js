@@ -469,7 +469,7 @@ __webpack_require__(13);
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Gulp Generator</title>\n  </head>\n  <body>\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-sm-12\">\n          test\n        </div>\n      </div>\n    </div>\n    <script type=\"text/javascript\" src=\"./dist/commons.js\"></script>\n    <script type=\"text/javascript\" src=\"./dist/bundle.js\"></script>\n  </body>\n</html>\n";
+module.exports = "<!DOCTYPE html>\n<html>\n\n<head>\n  <meta charset=\"utf-8\">\n  <title>Gulp Generator</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>\n\n<body>\n  <div class=\"container container-fluid\">\n    <div class=\"row\">\n      <div class=\"col-sm-12\">\n        test\n      </div>\n    </div>\n  </div>\n  <script type=\"text/javascript\" src=\"./dist/commons.js\"></script>\n  <script type=\"text/javascript\" src=\"./dist/bundle.js\"></script>\n</body>\n\n</html>\n";
 
 /***/ }),
 /* 6 */
@@ -675,7 +675,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background: blue; }\n", ""]);
+exports.push([module.i, "body {\n  background: none;\n  margin: 0px;\n  padding: 0px; }\n", ""]);
 
 // exports
 
