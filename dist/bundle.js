@@ -675,7 +675,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  background: none;\n  margin: 0;\n  padding: 0; }\n  body .container .main-menu {\n    display: inline-block;\n    width: 100%;\n    border: 1px solid #cccccc;\n    margin: 10px auto; }\n    body .container .main-menu ul.nav {\n      margin: 5px; }\n  body .container .main-content {\n    border: 1px solid #cccccc;\n    padding: 10px; }\n    body .container .main-content .tab-content {\n      padding: 10px;\n      border: 1px solid #cccccc;\n      border-top: 0px solid #cccccc; }\n", ""]);
+exports.push([module.i, "body {\n  background: none;\n  margin: 0;\n  padding: 0; }\n  body .container .main-menu {\n    display: inline-block;\n    width: 100%;\n    border: 1px solid #cccccc;\n    margin: 10px auto; }\n    body .container .main-menu ul.nav {\n      margin: 5px; }\n  body .container .main-content {\n    border: 1px solid #cccccc;\n    padding: 10px; }\n    body .container .main-content .tab-content {\n      padding: 10px;\n      border: 1px solid #cccccc;\n      border-top: 0 solid #cccccc; }\n", ""]);
 
 // exports
 
