@@ -16,6 +16,18 @@
     border: 1px solid $borderColor;
     padding: 10px;
 
+    #addon5 {
+      height: 250px;
+      color: red;
+
+      #project-author {
+        height: 250px;
+        color:red;
+        // display: inline-block;
+          border-bottom: 0 solid $borderColor;
+      }
+    }
+
     .tab-content {
       padding: 10px;
       border: 1px solid $borderColor;
