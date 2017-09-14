@@ -1,5 +1,8 @@
-body{
+@import 'variables'; // imports ALL the variables into the main scss for future use
+body {
   background: none;
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  padding: 0;
+  
+  @import 'container'; //imports the main container
 }

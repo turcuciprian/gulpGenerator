@@ -11,7 +11,82 @@
   <div class="container container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        test
+        <div class="main-menu">
+          <!-- bootstrap menu -->
+          <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">General</a></li>
+            <li role="presentation"><a href="#">gulpfile.js</a></li>
+            <li role="presentation"><a href="#">package.json</a></li>
+            <li role="presentation"><a href="#">RESULT</a></li>
+          </ul>
+          <!-- bootstrap menu END -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="main-content">
+          <div class="row">
+            <!-- colum 1 START -->
+            <div class="col-sm-4">
+              <!-- Bootstrap input group START -->
+              <p>
+                <label for="project-name">Project Name</label>
+                <div class="input-group">
+                  <span class="input-group-addon" id="addon1"></span>
+                  <input type="text" class="form-control" id="project-name" aria-describedby="addon1" placeholder="ex: My Project">
+                </div>
+              </p>
+              <!-- Bootstrap input group END -->
+              <!-- Bootstrap input group START -->
+              <p>
+                <label for="project-version">Project Version</label>
+                <div class="input-group">
+                  <span class="input-group-addon" id="addon2"></span>
+                  <input type="text" class="form-control" id="project-version" aria-describedby="addon2" placeholder="ex: 1.0.0">
+                </div>
+              </p>
+              <!-- Bootstrap input group END -->
+              <!-- Bootstrap input group START -->
+              <p>
+                <label for="project-author">Project Author</label>
+                <div class="input-group">
+                  <span class="input-group-addon" id="addon3"></span>
+                  <input type="text" class="form-control" id="project-author" aria-describedby="addon3" placeholder="ex: John Smith">
+                </div>
+              </p>
+              <!-- Bootstrap input group END -->
+            </div>
+            <!-- colum 1 END -->
+            <!-- colum 2 START -->
+            <div class="col-sm-8">
+              <div>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="devDependencies" role="tab" data-toggle="tab">Dev dependencies</a></li>
+                  <li role="presentation"><a href="#profile" aria-controls="profile" role="dependencies" data-toggle="tab">Dependencies</a></li>
+                  <li role="presentation"><a href="#messages" aria-controls="messages" role="scripts" data-toggle="tab">Scripts</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="devDependencies">
+                    <p>
+                      Nothing <br> here <br> so <br> far <br>
+                      Add some content here please....
+                    </p>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="dependencies">...</div>
+                  <div role="tabpanel" class="tab-pane" id="scripts">...</div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- colum 2 END -->
+          </div>
+        </div>
       </div>
     </div>
   </div>
