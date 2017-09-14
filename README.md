@@ -2,7 +2,7 @@
 
 
 1. npm install
-2. npm run watch
+2. npm run dev
 
 ### Usage instructions
 
