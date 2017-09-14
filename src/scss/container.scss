@@ -21,9 +21,10 @@
       color: red;
 
       #project-author {
-        height: 450px;
+        height: 250px;
         color:red;
-        display: inline-block;
+        // display: inline-block;
+          border-bottom: 0 solid $borderColor;
       }
     }
 
