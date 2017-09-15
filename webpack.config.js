@@ -62,8 +62,12 @@ module.exports = {
         test: /\.html$/,
         loader: "html-loader"
       }
-
       // Loaders for other file types can go here
     ],
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
+  }
 };
