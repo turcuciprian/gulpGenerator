@@ -26,7 +26,7 @@ module.exports = {
       server: {
         baseDir: ['']
       },
-    })
+    }),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, './'),
