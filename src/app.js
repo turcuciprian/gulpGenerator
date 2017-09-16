@@ -10,7 +10,6 @@ import './js/script.js';
 
 //library
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 // custom
 import './scss/main.scss';
 

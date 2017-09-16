@@ -1,13 +1,13 @@
-//import libraries
 import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue'
-//use libraries together
-Vue.use(BootstrapVue);
-
+import * as uiv from 'uiv';
+Vue.use(uiv)
 
 new Vue({
-  el: '#app',
-  components: {
-    BootstrapVue
+  el:'#app',
+  data:{
+    message: 'example project'
   },
-})
+  components: {
+    uiv
+  }
+});

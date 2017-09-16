@@ -8,144 +8,133 @@
 </head>
 
 <body>
-  <div class="container container-fluid">
+  <div class="container container-fluid" id="app">
     <div class="row">
       <div class="col-sm-12">
-        <div class="main-menu">
-          <!-- bootstrap menu -->
-          <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">General</a></li>
-            <li role="presentation"><a href="#">gulpfile.js</a></li>
-            <li role="presentation"><a href="#">package.json</a></li>
-            <li role="presentation"><a href="#">RESULT</a></li>
-          </ul>
-          <!-- bootstrap menu END -->
-        </div>
-      </div>
-    </div>
-    <div class="row" id="app">
-      <div class="col-sm-12">
         <div class="main-content">
-          <b-card no-body>
-    <b-tabs ref="tabs" card>
-        <b-tab title="Tab 1" active>
-            Tab Contents
-        </b-tab>
-        <b-tab title="Tab 2">
-            Tab Contents 2
-        </b-tab>
-    </b-tabs>
-</b-card>
+          <tabs>
+            <tab title="general">
+              <div class="row">
+                <!-- colum 1 START -->
+                <div class="col-sm-4">
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-name">Project Name{{message}}</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="project-name" aria-describedby="addon1" placeholder="ex: My Project">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-version">Project Version</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="project-version" aria-describedby="addon2" placeholder="ex: 1.0.0">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">Project Author</label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="project-author" aria-describedby="addon3" placeholder="ex: John Smith">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">License</label>
+                    <div class="form-group">
+                      <span class="form-group-addon" id="addon9"></span>
+                      <input type="text" class="form-control" id="project-author" aria-describedby="addon4" placeholder="ex: ISC">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">Project description</label>
+                    <div class="form-group">
+                      <!-- Modify here -->
+                      <span class="form-group-addon" id="addon9"></span>
+                      <textarea name="name" class="form-control txtarr" rows="8" cols="80"></textarea>
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">Repository Type</label>
+                    <div class="form-group">
+                      <span class="form-group-addon" id="addon9"></span>
+                      <input type="text" class="form-control" id="project-author" aria-describedby="addon6" placeholder="ex: GIT">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">Repository URL</label>
+                    <div class="form-group">
+                      <span class="form-group-addon" id="addon9"></span>
+                      <input type="text" class="form-control" id="project-author" aria-describedby="addon7" placeholder="ex: http://github.com/a/gulpGenerator.git">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">Bugs URL</label>
+                    <div class="form-group">
+                      <span class="form-group-addon" id="addon9"></span>
+                      <input type="text" class="form-control" id="project-author" aria-describedby="addon8" placeholder="ex: http://google.com">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                  <!-- Bootstrap input group START -->
+                  <p>
+                    <label for="project-author">Homepage</label>
+                    <div class="form-group">
+                      <span class="form-group-addon" id="addon9"></span>
+                      <input type="text" class="form-control" id="project-author" aria-describedby="addon9" placeholder="ex: http://github.com/a/gulpGenerator.git">
+                    </div>
+                  </p>
+                  <!-- Bootstrap input group END -->
+                </div>
+                <!-- colum 1 END -->
+                <!-- colum 2 START -->
+                <div class="col-sm-8">
+                  <div>
 
-          <div class="row">
-            <!-- colum 1 START -->
-            <div class="col-sm-4">
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-name">Project Name{{message}}</label>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="project-name" aria-describedby="addon1" placeholder="ex: My Project">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-version">Project Version</label>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="project-version" aria-describedby="addon2" placeholder="ex: 1.0.0">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">Project Author</label>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="project-author" aria-describedby="addon3" placeholder="ex: John Smith">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">License</label>
-                <div class="form-group">
-                  <span class="form-group-addon" id="addon9"></span>
-                  <input type="text" class="form-control" id="project-author" aria-describedby="addon4" placeholder="ex: ISC">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">Project description</label>
-                <div class="form-group">
-                  <!-- Modify here -->
-                  <span class="form-group-addon" id="addon9"></span>
-                  <textarea name="name" class="form-control txtarr" rows="8" cols="80"></textarea>
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">Repository Type</label>
-                <div class="form-group">
-                  <span class="form-group-addon" id="addon9"></span>
-                  <input type="text" class="form-control" id="project-author" aria-describedby="addon6" placeholder="ex: GIT">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">Repository URL</label>
-                <div class="form-group">
-                  <span class="form-group-addon" id="addon9"></span>
-                  <input type="text" class="form-control" id="project-author" aria-describedby="addon7" placeholder="ex: http://github.com/a/gulpGenerator.git">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">Bugs URL</label>
-                <div class="form-group">
-                  <span class="form-group-addon" id="addon9"></span>
-                  <input type="text" class="form-control" id="project-author" aria-describedby="addon8" placeholder="ex: http://google.com">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-              <!-- Bootstrap input group START -->
-              <p>
-                <label for="project-author">Homepage</label>
-                <div class="form-group">
-                  <span class="form-group-addon" id="addon9"></span>
-                  <input type="text" class="form-control" id="project-author" aria-describedby="addon9" placeholder="ex: http://github.com/a/gulpGenerator.git">
-                </div>
-              </p>
-              <!-- Bootstrap input group END -->
-            </div>
-            <!-- colum 1 END -->
-            <!-- colum 2 START -->
-            <div class="col-sm-8">
-              <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#home" aria-controls="devDependencies" role="tab" data-toggle="tab">Dev dependencies</a></li>
+                      <li role="presentation"><a href="#profile" aria-controls="profile" role="dependencies" data-toggle="tab">Dependencies</a></li>
+                      <li role="presentation"><a href="#messages" aria-controls="messages" role="scripts" data-toggle="tab">Scripts</a></li>
+                    </ul>
 
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#home" aria-controls="devDependencies" role="tab" data-toggle="tab">Dev dependencies</a></li>
-                  <li role="presentation"><a href="#profile" aria-controls="profile" role="dependencies" data-toggle="tab">Dependencies</a></li>
-                  <li role="presentation"><a href="#messages" aria-controls="messages" role="scripts" data-toggle="tab">Scripts</a></li>
-                </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="devDependencies">
+                        <p>
+                          Nothing <br> here <br> so <br> far <br> Add some content here please....
+                        </p>
+                      </div>
+                    </div>
 
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane active" id="devDependencies">
-                    <p>
-                      Nothing <br> here <br> so <br> far <br> Add some content here please....
-                    </p>
                   </div>
+
                 </div>
-
+                <!-- colum 2 END -->
               </div>
+            </tab>
+            <tab title="Gulp">
+              Gulp config file Content
+            </tab>
+            <tab title="Package.Json">
+              Package jSon Configuration
+            </tab>
+            <tab title="Webpack">
+              Webpack config file
+            </tab>
+          </tabs>
 
-            </div>
-            <!-- colum 2 END -->
-          </div>
         </div>
       </div>
     </div>
@@ -153,8 +142,4 @@
   <script type="text/javascript" src="./dist/commons.js"></script>
   <script type="text/javascript" src="./dist/bundle.js"></script>
 </body>
-
 </html>
-
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MU4RJNNF74QKY
