@@ -5,7 +5,17 @@ Vue.use(uiv)
 new Vue({
   el:'#app',
   data:{
-    message: 'example project'
+    form: {
+      name: '',
+      version: '',
+      author: '',
+      license: '',
+      description: '',
+      repositoryType: '',
+      repositoryURL: '',
+      bugsURL: '',
+      homepage: '',
+    }
   },
   components: {
     uiv
