@@ -17,88 +17,101 @@
               <div class="row">
                 <!-- colum 1 START -->
                 <div class="col-sm-12">
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-name">Project Name{{message}}</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="project-name" aria-describedby="addon1" placeholder="ex: My Project" v-bind:value="form.name">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-name">Project Name</label>
+                        <div class="form-group">
+                          <input v-model="form.name" type="text" class="form-control" id="project-name" aria-describedby="addon1" placeholder="ex: My Project">
+                        </div>
+
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-version">Project Version</label>
+                        <div class="form-group">
+                          <input v-model="form.version" type="text" class="form-control" id="project-version" aria-describedby="addon2" placeholder="ex: 1.0.0">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">Project Author</label>
+                        <div class="form-group">
+                          <input v-model="form.author" type="text" class="form-control" id="project-author" aria-describedby="addon3" placeholder="ex: John Smith">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">License</label>
+                        <div class="form-group">
+                          <span class="form-group-addon" id="addon9"></span>
+                          <input v-model="form.license" type="text" class="form-control" id="project-author" aria-describedby="addon4" placeholder="ex: ISC">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">Project description</label>
+                        <div class="form-group">
+                          <!-- Modify here -->
+                          <span class="form-group-addon" id="addon9"></span>
+                          <textarea v-model="form.description" name="name" class="form-control txtarr" rows="8" cols="80"></textarea>
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">Repository Type</label>
+                        <div class="form-group">
+                          <span class="form-group-addon" id="addon9"></span>
+                          <input v-model="form.repositoryType" type="text" class="form-control" id="project-author" aria-describedby="addon6" placeholder="ex: GIT">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">Repository URL</label>
+                        <div class="form-group">
+                          <span class="form-group-addon" id="addon9"></span>
+                          <input v-model="form.repositoryURL" type="text" class="form-control" id="project-author" aria-describedby="addon7" placeholder="ex: http://github.com/a/gulpGenerator.git">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">Bugs URL</label>
+                        <div class="form-group">
+                          <span class="form-group-addon" id="addon9"></span>
+                          <input v-model="form.bugsURL" type="text" class="form-control" id="project-author" aria-describedby="addon8" placeholder="ex: http://google.com">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
+                      <!-- Bootstrap input group START -->
+                      <p>
+                        <label for="project-author">Homepage</label>
+                        <div class="form-group">
+                          <span class="form-group-addon" id="addon9"></span>
+                          <input v-model="form.homepage" type="text" class="form-control" id="project-author" aria-describedby="addon9" placeholder="ex: http://github.com/a/gulpGenerator.git">
+                        </div>
+                      </p>
+                      <!-- Bootstrap input group END -->
                     </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-version">Project Version</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="project-version" aria-describedby="addon2" placeholder="ex: 1.0.0" v-bind:value="form.version">
+                    <div class="col-sm-6">
+                      <p>
+                        <vue-typeahead prefetch="https://twitter.github.io/typeahead.js/data/films/post_1960.json" display-key='value' classes="form-control" remote="https://twitter.github.io/typeahead.js/data/films/queries/%QUERY.json'" v-on:selected="done">
+
+                        </vue-typeahead>
+
+                      </p>
                     </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">Project Author</label>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="project-author" aria-describedby="addon3" placeholder="ex: John Smith" v-bind:value="form.author">
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">License</label>
-                    <div class="form-group">
-                      <span class="form-group-addon" id="addon9"></span>
-                      <input type="text" class="form-control" id="project-author" aria-describedby="addon4" placeholder="ex: ISC" v-bind:value="form.license">
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">Project description</label>
-                    <div class="form-group">
-                      <!-- Modify here -->
-                      <span class="form-group-addon" id="addon9"></span>
-                      <textarea name="name" class="form-control txtarr" rows="8" cols="80">{{form.description}}</textarea>
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">Repository Type</label>
-                    <div class="form-group">
-                      <span class="form-group-addon" id="addon9"></span>
-                      <input type="text" class="form-control" id="project-author" aria-describedby="addon6" placeholder="ex: GIT" v-bind:value="form.repositoryType">
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">Repository URL</label>
-                    <div class="form-group">
-                      <span class="form-group-addon" id="addon9"></span>
-                      <input type="text" class="form-control" id="project-author" aria-describedby="addon7" placeholder="ex: http://github.com/a/gulpGenerator.git" v-bind:value="form.repositoryURL">
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">Bugs URL</label>
-                    <div class="form-group">
-                      <span class="form-group-addon" id="addon9"></span>
-                      <input type="text" class="form-control" id="project-author" aria-describedby="addon8" placeholder="ex: http://google.com" v-bind:value="form.bugsURL">
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
-                  <!-- Bootstrap input group START -->
-                  <p>
-                    <label for="project-author">Homepage</label>
-                    <div class="form-group">
-                      <span class="form-group-addon" id="addon9"></span>
-                      <input type="text" class="form-control" id="project-author" aria-describedby="addon9" placeholder="ex: http://github.com/a/gulpGenerator.git" v-bind:value="form.homepage">
-                    </div>
-                  </p>
-                  <!-- Bootstrap input group END -->
+                  </div>
+
                 </div>
                 <!-- colum 1 END -->
-
               </div>
             </tab>
             <tab title="Gulp">
@@ -111,7 +124,33 @@
               Webpack config file
             </tab>
           </tabs>
-
+          <pre>
+  {
+    "name": "{{form.name}}",
+    "version": "{{form.version}}",
+    "description": "{{form.description}}",
+    "main": "webpack.config.js",
+    "dependencies": {
+      {{form.dependencies}}
+    },
+    "devDependencies": {
+      {{form.devDependencies}}
+    },
+    "scripts": {
+      {{form.scripts}}
+    },
+    "repository": {
+      "type": "{{form.repositoryType}}",
+      "url": "form.repositoryURL"
+    },
+    "author": "{{form.author}}",
+    "license": "{{form.license}}",
+    "bugs": {
+      "url": "{{form.bugsURL}}"
+    },
+    "homepage": "{{form.homepage}}"
+  }
+</pre>
         </div>
       </div>
     </div>

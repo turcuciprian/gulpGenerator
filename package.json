@@ -24,7 +24,8 @@
     "url-loader": "^0.5.9",
     "html-loader": "^0.5.1",
     "raw-loader": "^0.5.1",
-    "vuejs": "^1.0.29"
+    "vuejs": "^1.0.29",
+    "vuejs-autocomplete":"^0.1.1"
   },
   "scripts": {
     "start": "webpack && npm run dev",
